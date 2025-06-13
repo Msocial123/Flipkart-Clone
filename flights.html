@@ -1,0 +1,101 @@
+<!-- File: flights.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Booking - Flipkart Clone</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .flight-form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
+    }
+
+    .flight-form {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border: 2px solid yellow;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    .flight-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .flight-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .flight-form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .flight-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2a6ef2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .flight-form button:hover {
+      background-color: #1e56c1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Flipkart Clone</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="fashion.html">Fashion</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="flights.html">Flight Booking</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="flight-form-wrapper">
+      <form class="flight-form">
+        <h2>Book Your Flight</h2>
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required />
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required />
+
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="passengers">Passengers:</label>
+        <input type="number" id="passengers" name="passengers" required />
+
+        <button type="submit">Search Flights</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flipkart Clone. All rights reserved.</p>
+  </footer>
+</body>
+</html>

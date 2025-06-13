@@ -1,0 +1,101 @@
+<!-- File: contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Flipkart Clone</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .contact-form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
+    }
+
+    .contact-form {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border: 2px solid yellow;
+      border-radius: 10px;
+      width: 350px;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2a6ef2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #1e56c1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Flipkart Clone</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="fashion.html">Fashion</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="flights.html">Flight Booking</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-form-wrapper">
+      <form class="contact-form">
+        <h2>Contact Us</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flipkart Clone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
